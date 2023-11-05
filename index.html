@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            background-color: #F3E5F5
+;
+    }
+        .custom-select {
+            height: 1.85rem; /* Adjust the height as needed */
+            width: 12rem;
+        }
+
+        .degreeinput {
+            width: 10rem;
+        }
+        
+        .minuteinput {
+            width: 10rem;
+        }
+
+        .container {
+            justify-content: center;
+            align-items: center;
+            margin-top: 5rem;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Adjust values for the shadow */
+            background: linear-gradient(to bottom right, #fff, transparent);
+            border-radius: 10px;
+            padding: 2rem;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Planets</th>
+                <th scope="col">Sign</th>
+                <th scope="col">Degree</th>
+                <th scope="col">Minute</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Sun</th>
+                <td><select id=sunsign name=sunsign class="custom-select">
+                    <option selected>&#x2609; Select Sun Sign</option>
+                    <option value="Aries">Aries ♈</option>
+                    <option value="Taurus">Taurus ♉</option>
+                    <option value="Gemini">Gemini ♊</option>
+                    <option value="Cancer">Cancer ♋</option>
+                    <option value="Leo">Leo ♌</option>
+                    <option value="Virgo">Virgo ♍</option>
+                    <option value="Libra">Libra ♎</option>
+                    <option value="Scorpio">Scorpio ♏</option>
+                    <option value="Sagittarius">Sagittarius ♐</option>
+                    <option value="Capricorn">Capricorn ♑</option>
+                    <option value="Aquarius">Aquarius ♒</option>
+                    <option value="Pisces">Pisces ♓</option>
+                  </select></td>
+                <td>
+                    <input class="degreeinput" type="number" name="sunDegree" placeholder="Sun Degree" required min="0" max="30">
+                </td>
+                <td>
+                    <input class="minuteinput" type="number" name="sunMinute" placeholder="Sun Minute" required min="0" max="59">
+                </td>
+              </tr>
+
+              
+
+              <tr>
+                <th scope="row">Moon</th>
+                <td><select id=moonsign name=moonsign class="custom-select">
+                    <option selected>&#x2609; Select Moon Sign</option>
+                    <option value="Aries">Aries ♈</option>
+                    <option value="Taurus">Taurus ♉</option>
+                    <option value="Gemini">Gemini ♊</option>
+                    <option value="Cancer">Cancer ♋</option>
+                    <option value="Leo">Leo ♌</option>
+                    <option value="Virgo">Virgo ♍</option>
+                    <option value="Libra">Libra ♎</option>
+                    <option value="Scorpio">Scorpio ♏</option>
+                    <option value="Sagittarius">Sagittarius ♐</option>
+                    <option value="Capricorn">Capricorn ♑</option>
+                    <option value="Aquarius">Aquarius ♒</option>
+                    <option value="Pisces">Pisces ♓</option>
+                  </select></td>
+                <td>
+                    <input class="degreeinput" type="number" name="moonDegree" placeholder="Moon Degree" required min="0" max="30">
+                </td>
+                <td>
+                    <input class="minuteinput" type="number" name="moonMinute" placeholder="Moon Minute" required min="0" max="59">
+                </td>
+              </tr>
+
+              
+
+              <tr>
+                <th scope="row">Mercury</th>
+                <td><select id=mercurysign name=mercurysign class="custom-select">
+                    <option selected>&#x2609; Select Mercury Sign</option>
+                    <option value="Aries">Aries ♈</option>
+                    <option value="Taurus">Taurus ♉</option>
+                    <option value="Gemini">Gemini ♊</option>
+                    <option value="Cancer">Cancer ♋</option>
+                    <option value="Leo">Leo ♌</option>
+                    <option value="Virgo">Virgo ♍</option>
+                    <option value="Libra">Libra ♎</option>
+                    <option value="Scorpio">Scorpio ♏</option>
+                    <option value="Sagittarius">Sagittarius ♐</option>
+                    <option value="Capricorn">Capricorn ♑</option>
+                    <option value="Aquarius">Aquarius ♒</option>
+                    <option value="Pisces">Pisces ♓</option>
+                  </select></td>
+                <td>
+                    <input class="degreeinput" type="number" name="mercuryDegree" placeholder="Mercury Degree" required min="0" max="30">
+                </td>
+                <td>
+                    <input class="minuteinput" type="number" name="mercuryMinute" placeholder="Mercury Minute" required min="0" max="59">
+                </td>
+              </tr>
+
+              
+
+              <tr>
+                <th scope="row">Venus</th>
+                <td><select id=venussign name=venussign class="custom-select">
+                    <option selected>&#x2609; Select Venus Sign</option>
+                    <option value="Aries">Aries ♈</option>
+                    <option value="Taurus">Taurus ♉</option>
+                    <option value="Gemini">Gemini ♊</option>
+                    <option value="Cancer">Cancer ♋</option>
+                    <option value="Leo">Leo ♌</option>
+                    <option value="Virgo">Virgo ♍</option>
+                    <option value="Libra">Libra ♎</option>
+                    <option value="Scorpio">Scorpio ♏</option>
+                    <option value="Sagittarius">Sagittarius ♐</option>
+                    <option value="Capricorn">Capricorn ♑</option>
+                    <option value="Aquarius">Aquarius ♒</option>
+                    <option value="Pisces">Pisces ♓</option>
+                  </select></td>
+                <td>
+                    <input class="degreeinput" type="number" name="venusDegree" placeholder="Venus Degree" required min="0" max="30">
+                </td>
+                <td>
+                    <input class="minuteinput" type="number" name="venusMinute" placeholder="Venus Minute" required min="0" max="59">
+                </td>
+              </tr>
+
+              
+
+              <tr>
+                <th scope="row">Mars</th>
+                <td><select id=marssign name=marssign class="custom-select">
+                    <option selected>&#x2609; Select Mars Sign</option>
+                    <option value="Aries">Aries ♈</option>
+                    <option value="Taurus">Taurus ♉</option>
+                    <option value="Gemini">Gemini ♊</option>
+                    <option value="Cancer">Cancer ♋</option>
+                    <option value="Leo">Leo ♌</option>
+                    <option value="Virgo">Virgo ♍</option>
+                    <option value="Libra">Libra ♎</option>
+                    <option value="Scorpio">Scorpio ♏</option>
+                    <option value="Sagittarius">Sagittarius ♐</option>
+                    <option value="Capricorn">Capricorn ♑</option>
+                    <option value="Aquarius">Aquarius ♒</option>
+                    <option value="Pisces">Pisces ♓</option>
+                  </select></td>
+                <td>
+                    <input class="degreeinput" type="number" name="marsDegree" placeholder="Mars Degree" required min="0" max="30">
+                </td>
+                <td>
+                    <input class="minuteinput" type="number" name="marsMinute" placeholder="Mars Minute" required min="0" max="59">
+                </td>
+              </tr>
+
+              
+
+              <tr>
+                <th scope="row">Jupiter</th>
+                <td><select id=jupitersign name=jupitersign class="custom-select">
+                    <option selected>&#x2609; Select Jupiter Sign</option>
+                    <option value="Aries">Aries ♈</option>
+                    <option value="Taurus">Taurus ♉</option>
+                    <option value="Gemini">Gemini ♊</option>
+                    <option value="Cancer">Cancer ♋</option>
+                    <option value="Leo">Leo ♌</option>
+                    <option value="Virgo">Virgo ♍</option>
+                    <option value="Libra">Libra ♎</option>
+                    <option value="Scorpio">Scorpio ♏</option>
+                    <option value="Sagittarius">Sagittarius ♐</option>
+                    <option value="Capricorn">Capricorn ♑</option>
+                    <option value="Aquarius">Aquarius ♒</option>
+                    <option value="Pisces">Pisces ♓</option>
+                  </select></td>
+                <td>
+                    <input class="degreeinput" type="number" name="jupiterDegree" placeholder="Jupiter Degree" required min="0" max="30">
+                </td>
+                <td>
+                    <input class="minuteinput" type="number" name="jupiterMinute" placeholder="Jupiter Minute" required min="0" max="59">
+                </td>
+              </tr>
+
+
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
